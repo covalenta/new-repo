@@ -1,0 +1,30 @@
+@import 'tailwind.css';
+
+body {
+    background-color: #1A202C;
+    color: #A0AEC0;
+}
+
+#header {
+    @apply text-3xl font-bold text-center py-4;
+}
+
+#main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+#footer {
+    @apply text-center py-4;
+}
+
+@media (min-width: 640px) {
+    #header, #footer {
+        @apply text-4xl;
+    }
+}
+
+@media (min-width: 1024px) {
+    #header, #footer {
+        @apply text-5xl;
+    }
+}
